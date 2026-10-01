@@ -1,4 +1,12 @@
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Travel & Real Estate",
+  description:
+    "Explore Christime Group travel agency services, property opportunities, and housing development.",
+};
+
 const services = [
   {
     title: "Flight Reservations",
@@ -44,13 +52,23 @@ export default function TravelRealEstatePage() {
       >
         <p className="gold">CHRISTIME GROUP</p>
 
-        <h1 className="section-title" style={{ maxWidth: 800 }}>
+        <h1
+          className="section-title"
+          style={{ maxWidth: 800 }}
+        >
           Travel Beyond Boundaries.
           <br />
           <span className="gold">Build Your Future.</span>
         </h1>
 
-        <p style={{ color: "#ddd", fontSize: 18, maxWidth: 650, lineHeight: 1.8 }}>
+        <p
+          style={{
+            color: "#ddd",
+            fontSize: 18,
+            maxWidth: 650,
+            lineHeight: 1.8,
+          }}
+        >
           Comprehensive travel services and real estate
           opportunities designed to connect people with
           destinations, homes, and investments.
@@ -58,8 +76,14 @@ export default function TravelRealEstatePage() {
       </section>
 
       <section className="section">
-        <div style={{ textAlign: "center", marginBottom: 45 }}>
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: 45,
+          }}
+        >
           <p className="gold">OUR SERVICES</p>
+
           <h2 className="section-title">
             Travel & Real Estate Solutions
           </h2>
@@ -68,17 +92,32 @@ export default function TravelRealEstatePage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(260px,1fr))",
             gap: 22,
           }}
         >
           {services.map((service) => (
-            <div key={service.title} className="card" style={{ padding: 28 }}>
-              <h3 style={{ color: "#d4af37", fontSize: 21 }}>
+            <div
+              key={service.title}
+              className="card"
+              style={{ padding: 28 }}
+            >
+              <h3
+                style={{
+                  color: "#d4af37",
+                  fontSize: 21,
+                }}
+              >
                 {service.title}
               </h3>
 
-              <p style={{ color: "#aaa", lineHeight: 1.8 }}>
+              <p
+                style={{
+                  color: "#aaa",
+                  lineHeight: 1.8,
+                }}
+              >
                 {service.description}
               </p>
             </div>
@@ -97,13 +136,23 @@ export default function TravelRealEstatePage() {
           Let's Plan Your Next Move
         </h2>
 
-        <p style={{ color: "#aaa", margin: "20px auto", maxWidth: 600 }}>
+        <p
+          style={{
+            color: "#aaa",
+            margin: "20px auto",
+            maxWidth: 600,
+            lineHeight: 1.8,
+          }}
+        >
           Whether you are planning a journey or exploring
           property opportunities, our team is ready to hear
           from you.
         </p>
 
-        <a href="mailto:info@christimegroup.com" className="btn-gold">
+        <a
+          href="mailto:info@christimegroup.com?subject=Travel%20and%20Real%20Estate%20Inquiry"
+          className="btn-gold"
+        >
           Make an Inquiry
         </a>
       </section>
