@@ -68,6 +68,7 @@ button {
   font-weight: 700;
   border-radius: 5px;
   transition: 0.3s;
+  border: 1px solid var(--gold);
 }
 
 .btn-gold:hover {
@@ -103,8 +104,61 @@ button {
   border-color: var(--gold);
 }
 
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 18px 6%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a:not(.btn-gold):hover {
+  color: var(--gold);
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+}
+
+.footer-heading {
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.footer-text {
+  color: #aaa;
+  line-height: 1.9;
+}
+
+.footer-text a:hover {
+  color: var(--gold);
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 65px 6%;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
   }
 }
