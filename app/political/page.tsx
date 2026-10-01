@@ -1,4 +1,12 @@
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Political Campaign & Public Engagement",
+  description:
+    "Christime Group's platform for political campaign activities, public dialogue, leadership initiatives, and community engagement.",
+};
+
 const values = [
   {
     title: "Community Engagement",
@@ -36,17 +44,28 @@ export default function PoliticalPage() {
         }}
       >
         <div style={{ maxWidth: 800 }}>
-          <p className="gold">POLITICAL CAMPAIGN & PUBLIC ENGAGEMENT</p>
+          <p className="gold">
+            POLITICAL CAMPAIGN & PUBLIC ENGAGEMENT
+          </p>
 
           <h1 className="section-title">
             Leadership Through
             <br />
-            <span className="gold">Service and Engagement</span>
+            <span className="gold">
+              Service and Engagement
+            </span>
           </h1>
 
-          <p style={{ color: "#ddd", fontSize: 19, lineHeight: 1.8 }}>
-            A platform for public dialogue, community participation,
-            leadership initiatives, and meaningful engagement.
+          <p
+            style={{
+              color: "#ddd",
+              fontSize: 19,
+              lineHeight: 1.8,
+            }}
+          >
+            A platform for public dialogue, community
+            participation, leadership initiatives, and
+            meaningful engagement.
           </p>
 
           <a
@@ -60,16 +79,31 @@ export default function PoliticalPage() {
       </section>
 
       <section id="vision" className="section">
-        <div style={{ maxWidth: 850, margin: "auto", textAlign: "center" }}>
+        <div
+          style={{
+            maxWidth: 850,
+            margin: "auto",
+            textAlign: "center",
+          }}
+        >
           <p className="gold">OUR VISION</p>
 
           <h2 className="section-title">
             A Future Built Through Participation
           </h2>
 
-          <div className="gold-line" style={{ margin: "25px auto" }} />
+          <div
+            className="gold-line"
+            style={{ margin: "25px auto" }}
+          />
 
-          <p style={{ color: "#aaa", fontSize: 17, lineHeight: 1.9 }}>
+          <p
+            style={{
+              color: "#aaa",
+              fontSize: 17,
+              lineHeight: 1.9,
+            }}
+          >
             We believe public engagement is essential to
             understanding community priorities, encouraging
             constructive dialogue, and shaping initiatives
@@ -78,9 +112,18 @@ export default function PoliticalPage() {
         </div>
       </section>
 
-      <section className="section" style={{ background: "#101010" }}>
-        <div style={{ textAlign: "center", marginBottom: 45 }}>
+      <section
+        className="section"
+        style={{ background: "#101010" }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: 45,
+          }}
+        >
           <p className="gold">OUR COMMITMENTS</p>
+
           <h2 className="section-title">
             Principles of Public Engagement
           </h2>
@@ -89,17 +132,32 @@ export default function PoliticalPage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(250px,1fr))",
             gap: 22,
           }}
         >
           {values.map((value) => (
-            <div key={value.title} className="card" style={{ padding: 28 }}>
-              <h3 style={{ color: "#d4af37", fontSize: 22 }}>
+            <div
+              key={value.title}
+              className="card"
+              style={{ padding: 28 }}
+            >
+              <h3
+                style={{
+                  color: "#d4af37",
+                  fontSize: 22,
+                }}
+              >
                 {value.title}
               </h3>
 
-              <p style={{ color: "#aaa", lineHeight: 1.8 }}>
+              <p
+                style={{
+                  color: "#aaa",
+                  lineHeight: 1.8,
+                }}
+              >
                 {value.description}
               </p>
             </div>
@@ -107,14 +165,24 @@ export default function PoliticalPage() {
         </div>
       </section>
 
-      <section className="section" style={{ textAlign: "center" }}>
+      <section
+        className="section"
+        style={{ textAlign: "center" }}
+      >
         <p className="gold">GET INVOLVED</p>
 
         <h2 className="section-title">
           Join the Conversation
         </h2>
 
-        <p style={{ color: "#aaa", maxWidth: 600, margin: "20px auto" }}>
+        <p
+          style={{
+            color: "#aaa",
+            maxWidth: 600,
+            margin: "20px auto",
+            lineHeight: 1.8,
+          }}
+        >
           Share your views, ask questions, or express interest
           in participating in community engagement activities.
         </p>
