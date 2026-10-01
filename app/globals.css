@@ -1,0 +1,110 @@
+
+@import "tailwindcss";
+
+:root {
+  --gold: #d4af37;
+  --gold-light: #f3d77a;
+  --black: #080808;
+  --dark: #121212;
+  --grey: #a1a1aa;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.gold-bg {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.section {
+  padding: 90px 7%;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.gold-line {
+  width: 70px;
+  height: 4px;
+  background: var(--gold);
+  margin: 22px 0;
+}
+
+.btn-gold {
+  display: inline-block;
+  padding: 15px 28px;
+  background: var(--gold);
+  color: #080808;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 14px 27px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.card {
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 65px 6%;
+  }
+}
